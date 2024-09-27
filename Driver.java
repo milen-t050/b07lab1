@@ -1,4 +1,3 @@
-import java.io.File;
 
 public class Driver {
     public static void main(String [] args) {
@@ -37,21 +36,6 @@ public class Driver {
         Polynomial p6 = new Polynomial(c5, e5);
         Polynomial p7 = new Polynomial(c6, e6);
         Polynomial p8 = p6.add(p7);
-
-        // file contructor test
-        File file = new File("/Users/milenthomas/b07lab1/test.txt");
-        Polynomial p9 = new Polynomial(file);
-
-        // print out p9
-        System.err.println("====================================");
-
-        for (int i = 0; i < p9.coefficients.length; i++) {
-            System.out.println(p9.coefficients[i] + "x^" + p9.exponents[i]);
-        }
-
-
-        // save to file test
-        p9.saveToFile("/Users/milenthomas/b07lab1/text1.txt");
         
     }
 }
