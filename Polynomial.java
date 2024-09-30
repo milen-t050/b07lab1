@@ -80,7 +80,7 @@ public class Polynomial {
             exponents = actual_exponents;
         }
         catch (FileNotFoundException e) {
-            System.out.println("File not found"); // Correct syntax for print statement
+            System.out.println("File not found");
         }
     }
 
